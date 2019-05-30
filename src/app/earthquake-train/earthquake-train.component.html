@@ -1,0 +1,8 @@
+<form class="container">
+    <input type="number" name="learningRate" [(ngModel)]="learningRate" class="input-form" placeholder="Enter Learning Rate"><br>
+    <input type="number" name="iterations" [(ngModel)]="iterations" class="input-form" placeholder="Enter Number of Iterations"><br>
+    <input type="submit" value="Custom Train" class="btn" (click)="customTrain()">
+    <div style="text-align: center; margin: 16px">OR</div>
+    <input type="button" value="Builtin Train" class="btn" (click)="train()">
+    <div class="result" *ngIf="result">{{result}}</div>
+</form>

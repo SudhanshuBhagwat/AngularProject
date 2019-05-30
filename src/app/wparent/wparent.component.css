@@ -1,0 +1,17 @@
+a {
+	border: 2px solid #9575CD;
+	padding: 18px 25px;
+	color: black;
+	margin-right: 25px;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+a:active, a:hover{
+	background-color: #9575CD;
+	color: white;
+}
+
+div{
+    margin-top: 3em;
+}

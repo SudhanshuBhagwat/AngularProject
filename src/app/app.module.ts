@@ -31,7 +31,7 @@ import { WparentComponent } from './wparent/wparent.component';
     HttpClientModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBDrQVh-mNx9pyWfsX1fKLUUTZ9kEIefqg',
-      libraries: ["places"]
+      libraries: ["places", "visualization"]
     }),
     FormsModule,
     ReactiveFormsModule

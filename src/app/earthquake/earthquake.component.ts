@@ -33,8 +33,7 @@ export class EarthquakeComponent implements OnInit {
       depth: this.depth,
       date: this.date
     }).subscribe(res => {
-      // this.response = res
-      console.log(res.response)
+      this.result = res.response
     });
   }
 

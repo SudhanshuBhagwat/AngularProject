@@ -4,6 +4,6 @@
   <input type="number" name="latitude" [(ngModel)]="latitude" class="input-form" placeholder="Enter Latitude"><br>
   <input type="number" name="longitude" [(ngModel)]="longitude" class="input-form" placeholder="Enter Longitude"><br>
   <input type="number" name="height" [(ngModel)]="height" class="input-form" placeholder="Enter Height"><br>
-  <input type="submit" value="Predit" class="btn" [disabled]="isDisabled" (click)="predict()">
+  <input type="submit" value="Predict" class="btn" [disabled]="isDisabled" (click)="predict()">
   <div class="result" *ngIf="result">{{result}}</div>
 </form>

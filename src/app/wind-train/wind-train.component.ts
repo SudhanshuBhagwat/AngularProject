@@ -10,6 +10,7 @@ export class WindTrainComponent implements OnInit {
   learningRate:Number
   iterations:Number
   result:String
+  isDisabled = false
 
   constructor() { }
 
@@ -17,11 +18,25 @@ export class WindTrainComponent implements OnInit {
   }
 
   train(){
-    console.log('Hello')
+    this.result = undefined
+    this.isDisabled = true
+    setTimeout(() => {
+      this.result = 'Hello There!!'
+      this.isDisabled = false
+    }, 2000)
   }
 
   customTrain(){
-    console.log('Hello')
+    if(this.learningRate > 0 && this.iterations > 0){
+      this.result = undefined
+      this.isDisabled = true
+      setTimeout(() => {
+        this.result = 'Hello There!!'
+        this.isDisabled = false
+      }, 2000)
+    }else{
+      this.result = 'Please fill in all the fields'
+    }
   }
 
 }

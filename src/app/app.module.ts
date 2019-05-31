@@ -8,7 +8,7 @@ import { AgmCoreModule } from '@agm/core';
 import { MapComponent } from './map/map.component';
 import { EarthquakeComponent } from './earthquake/earthquake.component';
 import { WindComponent } from './wind/wind.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EarthquakeTrainComponent } from './earthquake-train/earthquake-train.component';
 import { WindTrainComponent } from './wind-train/wind-train.component';
 import { EparentComponent } from './eparent/eparent.component';
@@ -30,9 +30,11 @@ import { WparentComponent } from './wparent/wparent.component';
     AppRoutingModule,
     HttpClientModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyBDrQVh-mNx9pyWfsX1fKLUUTZ9kEIefqg'
+      apiKey: 'AIzaSyBDrQVh-mNx9pyWfsX1fKLUUTZ9kEIefqg',
+      libraries: ["places"]
     }),
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,4 @@
 <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom" (mapClick)="onChosenLocation($event)"
     [disableDoubleClickZoom]="true" [mapDraggable]="false" [scrollwheel]="null">
-
+    <agm-marker [latitude]="mLatitude" [longitude]="mLongitude"></agm-marker>
 </agm-map>

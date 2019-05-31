@@ -12,9 +12,12 @@ export class MapComponent implements OnInit {
   longitude = 82.6984425712389
   zoom = 4.82
   latlong: LatLong
+  mLatitude:Number
+  mLongitude:Number
 
   onChosenLocation(event){
-    console.log(event.coords)
+    this.mLatitude = event.coords.lat
+    this.mLongitude = event.coords.lng
     this.data.changeMessage({
       latitude: event.coords.lat,
       longitude: event.coords.lng

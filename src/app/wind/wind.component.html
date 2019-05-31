@@ -1,7 +1,9 @@
 <form class="container">
+  <input placeholder="Search by city name" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" class="input-form" #search>
+  <div style="text-align: center; margin-bottom: 1em">Or Select A Location On The Map</div>
   <input type="number" name="latitude" [(ngModel)]="latitude" class="input-form" placeholder="Enter Latitude"><br>
   <input type="number" name="longitude" [(ngModel)]="longitude" class="input-form" placeholder="Enter Longitude"><br>
   <input type="number" name="height" [(ngModel)]="height" class="input-form" placeholder="Enter Height"><br>
-  <input type="submit" value="Predit" class="btn" (click)="predict()">
+  <input type="submit" value="Predit" class="btn" [disabled]="isDisabled" (click)="predict()">
   <div class="result" *ngIf="result">{{result}}</div>
 </form>

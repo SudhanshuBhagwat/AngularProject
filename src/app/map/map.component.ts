@@ -10,7 +10,7 @@ export class MapComponent implements OnInit {
 
   latitude = 23.14756761567721
   longitude = 82.6984425712389
-  zoom = 4.8
+  zoom = 4.82
   latlong: LatLong
 
   onChosenLocation(event){
